@@ -1,0 +1,190 @@
+body {
+    background-color: black;
+}
+
+button:focus {
+    outline: none;
+}
+
+#mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+#mainCanvas {
+    z-index: 5;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+#playButton:hover, #retryButton:hover, #resetButton:hover {
+    cursor: pointer;
+}
+
+#playButton:hover {
+    color: #052b2f;
+    background-color: #357c87;
+}
+
+#playButton:hover {
+    transition: 1s;
+    border: #031d1f solid 5px;
+}
+
+#retryButton:hover, #resetButton:hover {
+    color: #322b0e;
+    background-color: #937d28;
+}
+
+#retryButton:hover, #resetButton:hover {
+    transition: 1s;
+    border: #241f0a solid 5px;
+}
+
+#playButton, #retryButton {
+    z-index: 6;
+    font-family: 'Black Ops One', system-ui;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#playButton {
+    top: 250px;
+    left: calc(50% - 125px);
+    height: 125px;
+    width: 250px;
+    color: #073c42;
+    background-color: #439daa;
+    transition: 1s;
+    border: #439daa solid 1px;
+}
+
+#retryButton {
+    top: 150px;
+    left: calc(50% - 125px);
+    height: 125px;
+    width: 250px;
+    color: #453b13;
+    background-color: #a78f2e;
+    transition: 1s;
+    border: #a78f2e solid 1px;
+}
+
+#resetButton {
+    z-index: 6;
+    font-family: 'Black Ops One', system-ui;
+    position: absolute;
+    top: 300px;
+    left: calc(50% - 62.5px);
+    height: 75px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    border-radius: 10px;
+    color: #453b13;
+    background-color: #a78f2e;
+    transition: 1s;
+    border: #a78f2e solid 1px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#shopDiv {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#shopOpt1 {
+    top: 190px;
+    left: 20px;
+}
+
+#shopOpt2 {
+    top: 345px;
+    left: 20px;
+}
+
+#shopOpt3 {
+    top: 190px;
+    right: 20px;
+}
+
+#shopOpt4 {
+    top: 345px;
+    right: 20px;
+}
+
+#continueButton {
+    top: 140px;
+    right: 20px;
+    z-index: 0;
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(207, 156, 116);
+    border: 2.5px solid rgb(138, 93, 59);
+}
+
+.shopOption {
+    z-index: 0;
+    position: absolute;
+    height: 150px;
+    width: 225px;
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    /*justify-content: center;
+    align-items: center;*/
+    font-size: 35px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(207, 156, 116);
+    border: 2.5px solid rgb(138, 93, 59);
+}
+
+#continueButton:hover {
+    cursor: pointer;
+    background-color: rgb(175, 130, 96);
+    border: 2.5px solid rgb(84, 52, 27);
+}
+
+.shopOption:hover, #continueButton:hover {
+    cursor: pointer;
+}
+
+.shopOption .pName{
+    text-align: center;
+    border-bottom: 2.5px dotted black;
+}
+
+.shopOption * {
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+}
